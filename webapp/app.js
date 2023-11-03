@@ -10,6 +10,7 @@ const port = Number(process.argv[2]);
 
 const hbase = require('hbase')
 // host:'localhost', port:8070
+console.log(process.argv)
 var hclient = hbase({ host: process.argv[3], port: Number(process.argv[4])})
 
 // function rowToMap(row) {
